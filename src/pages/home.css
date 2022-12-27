@@ -1,0 +1,20 @@
+.hero_container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.hero_text,
+.hero_image {
+    width: 50%;
+}
+
+.hero_image {
+    overflow: hidden;
+}
+
+.hero_image img {
+    height: 100%;
+    width: 100%;
+}
