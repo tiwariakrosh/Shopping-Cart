@@ -2,7 +2,7 @@ import HeroImg from "/assets/bg.webp"
 import "./home.css"
 import { Row, Col } from 'react-bootstrap'
 import item from "../data/items.json"
-import StoreItem from "../context/StoreItem"
+import StoreItem from "../components/StoreItem"
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
         </div>
       </div>
       <h2 className="mt-4 mb-3 text-center">Trending Products</h2>
-      <Row md={2} xs={1} lg={3} className="g-3 mb-4">
+      <Row md={2} xs={1} lg={3} className="g-4 mb-4">
         {item.map((data) => (
           <Col key={data.id}>
             <StoreItem {...data} />
